@@ -16,6 +16,17 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-  }
+  },
+
+  config = function() 
+    require("snacks").setup()
+  end,
+
+  require("snacks.lua").setup({
+    always = true,
+    floating = false,
+    border = "rounded",
+    background = "dark",
+  })
 }
 
