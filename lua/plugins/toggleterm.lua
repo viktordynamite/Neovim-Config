@@ -2,6 +2,7 @@ return {
 	"akinsho/toggleterm.nvim",
 	priority = 1000,
 	lazy = false,
+	enabled = false,
 	config = function()
 		require("toggleterm").setup({
 			direction = "horizontal",
